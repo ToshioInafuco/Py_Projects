@@ -10,7 +10,7 @@ if not arquivoExiste(data):
 from time import sleep
 # Para 3 opções:
 while True:
-    resp = menu(["Opção 1", "Opção 2", "Sair do sistema"])
+    resp = menu(["Ver Cadastros", "Cadastrar", "Sair do sistema"])
     if(resp == 1):
         print("Opção 1")
         lerArquivo(data)
@@ -20,8 +20,6 @@ while True:
         nome = str(input("Nome: "))
         idade = leiaInt("Idade: ")
         novoCadastro(data, nome, idade)
-
-
     elif(resp == 3):
         print("Saindo do sistema...  Até logo!!!")
         break

@@ -1,3 +1,4 @@
+from posixpath import split
 from Lib.interface._init_ import *
 
 def arquivoExiste(nome):
@@ -27,7 +28,10 @@ def lerArquivo(nome):
         print("Erro ao ler o arquivo!")
     else:
         intro("CADASTROS")
-        print(a.read())
+        for linha in a:
+            dado = linha.split(";")
+            dado[1] = dado[1].replace("\n", "")
+            print(f"{dado[0]:<30}{dado[1]:>3}anos")
     finally:
         a.close()
 
