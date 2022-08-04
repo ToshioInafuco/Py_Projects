@@ -2,7 +2,7 @@ from operator import indexOf
 from Lib.interface._init_ import *
 from Lib.arquivo.open_arq import *
 
-data = "data.txt"
+data = "C:\\Users\\inafu\\OneDrive\\Área de Trabalho\\Git\\Py_Projects\\example_menu\\data\\data.txt"
 
 if not arquivoExiste(data):
     criarArquivo(data)

@@ -1,13 +1,13 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data_graph = pd.read_csv("data_read.csv", sep=";", names=["LDR", "Solo", "Temperatura", "Humidade", "Horario"])
+data_graph = pd.read_csv("C:\\Users\\inafu\\OneDrive\\Área de Trabalho\\Git\\Py_Projects\\EMG_plot\\data\\teste.csv", sep=";", names=["LDR", "Solo", "Temperatura", "Humidade", "Horario"])
 
 #https://matplotlib.org/stable/tutorials/index.html 
 
 figure = plt.figure(figsize = (17,9))#Tamanho da aba
 
-
+print(data_graph["LDR"])
 plt.subplot(321)
 plt.plot(data_graph["Horario"], data_graph["LDR"], label = "LDR", c = "k")
 plt.plot(data_graph["Horario"], data_graph["Solo"], label = "Solo", c = "g")
@@ -46,6 +46,6 @@ plt.title("  6  ")
 
 
 
-# plt.subplots_adjust(top=0.92, bottom=0.08, left=0.10, right=0.95, hspace=0.25,wspace=0.35)
-plt.tight_layout()
+plt.subplots_adjust(top=0.92, bottom=0.08, left=0.10, right=0.95, hspace=0.25,wspace=0.35)
+
 plt.show()

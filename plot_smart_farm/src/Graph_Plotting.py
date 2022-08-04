@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data_graph = pd.read_csv("data_read.csv", sep=";", names=["LDR", "Solo", "Temperatura", "Humidade", "Horario"])
+data_graph = pd.read_csv("C:\\Users\\inafu\\OneDrive\\Área de Trabalho\\Git\\Py_Projects\\plot_smart_farm\\data\\data_read.csv", sep=";", names=["LDR", "Solo", "Temperatura", "Humidade", "Horario"])
 # print(data_graph)
 
 #https://matplotlib.org/stable/tutorials/index.html 
